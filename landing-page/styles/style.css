@@ -56,6 +56,11 @@ h6 {
 	font-size: 3rem;
 }
 
+.poster img {
+	width: 40%;
+	object-fit: cover;
+}
+
 .tiles {
 	display: flex;
 	flex-direction: column;
@@ -64,6 +69,9 @@ h6 {
 
 .tiles h3 {
 	align-self: center;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #1f2937;
 }
 
 .tile-container {
@@ -76,24 +84,58 @@ h6 {
 	text-align: center;
 }
 
+.tile img {
+	width: 20vw;
+	height: 30vh;
+	object-fit: cover;
+}
+
 .quote {
+	padding: 4rem 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: #e5e7eb;
+}
+
+.quote * {
+	margin: 1rem 0;
 }
 
 .quote p {
 	width: 70%;
 }
 
+.quote-text {
+	font-size: 2.25rem;
+	font-weight: lighter;
+	font-style: italic;
+}
+
 .quote-speaker {
 	text-align: end;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.action {
+	display: flex;
+	justify-content: center;
+	padding: 2rem 0;
 }
 
 .action-box {
+	color: white;
+	background-color: #3882f6;
 	display: flex;
 	justify-content: space-around;
-	border: 2px solid black;
+	align-items: center;
+	border-radius: 10px;
+	width: 75%;
+}
+
+.action-box * {
+	margin: 0.5rem;
 }
 
 .footer {
@@ -104,9 +146,14 @@ h6 {
 }
 
 button {
+	padding: 0.5rem 2rem;
 	font-size: 1.25rem;
 	color: white;
 	background-color: #3882f6;
 	border: none;
-	border-radius: 2px;
+	border-radius: 4px;
+}
+
+.action button {
+	border: 1px solid white;
 }
